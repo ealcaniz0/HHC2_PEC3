@@ -5,23 +5,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <title>Club tenis vanguardia</title>
   </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
+  <body class="*:box-border flex flex-col font-sanserif text-2xl m-0 p-0">
+    <header class="bg-gray2 flex p-[20px] max-md:block">
+        <div class="logo">
+            <a href="./index.html"><img src="./assets/images/logo_tenis.png" alt="logo" class="h-[40px]"></a>            
+        </div>
+        <nav class="ml-auto max-md:left-0">
+            <ul class="flex p-0 m-0 list-none max-md:block">
+                <li class="nav-li"><a class="nav-a" href="">Miembros</a></li>
+                <li class="nav-li"><a class="nav-a" href="./page2.html">Liga</a></li>
+                <li class="nav-li"><a class="nav-a" href="">Galería</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="flex-1 h-full">
+        <include src="portada.html"></include>
+    </main>
+  <footer class="bg-gray2 flex h-[100px] p-[20px] text-white items-center">
+      <div>
+          Eva Alcañiz - PEC2
+      </div>
+  </footer>
     <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
   </body>
 </html>

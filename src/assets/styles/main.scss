@@ -2,7 +2,8 @@
  * Use this file to import partials.
  * Do not include SCSS code in this file.
  */
-
+ @tailwind base;
+ @tailwind components;
 /**
  * Import variables
  */
@@ -28,3 +29,24 @@
 /**
  * Do NOT include anything else in this file!
  */
+ @tailwind utilities;
+
+ @layer base {
+    :root{
+        --color-white: 255 255 255;
+        --color-gray1: 85 85 85;
+        --color-gray2: 51 51 51;
+        --color-green: 189 240 23;
+    }    
+ }
+ @layer components {
+    .article-p {
+    @apply leading-normal text-left
+    }
+    .nav-li{
+    @apply flex h-[50px] items-center
+    }
+    .nav-a{
+    @apply no-underline text-white p-[10px] hover:bg-gray1
+    }
+}
